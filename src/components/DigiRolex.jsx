@@ -5,10 +5,10 @@ const DigiRolex = () => {
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-    return () => clearInterval(timer);
+    const timer = setInterval(() => {////////
+      setTime(new Date());                   //
+    }, 1000);                                //setInterval va de la mano de clearInterval
+    return () => clearInterval(timer);//////
   }, []);
   return (
     <div className="bg-black text-white min-h-screen w-full flex items-center justify-center">
